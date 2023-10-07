@@ -12,5 +12,7 @@ module.exports = async function (context, req) {
     context.res.status(201).json(newProduct);
   } catch (error) {
     context.res.status(500).send(error);
+    console.log(error);
+
   }
 };
